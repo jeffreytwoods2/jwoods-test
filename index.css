@@ -27,7 +27,7 @@ header {
 }
 
 main {
-  background-color: #F6F6F6;
+  background-color: #F5F5F5;
 }
 
 /*
@@ -79,7 +79,6 @@ a {
 #hamburger {
   color: black;
   background-color: white;
-  /* vertical-align: baseline; */
 }
 
 main {
@@ -121,7 +120,8 @@ hr {
 }
 
 #page-header {
-  border: solid black 1px;
+  border: black 1px;
+  border-style: solid none;
   position: relative;
   text-align: center;
   display: grid;
@@ -206,7 +206,8 @@ iframe {
 }
 
 footer {
-  color: gray;
+  color: #888888;
+  background-color: #F5F5F5;
   padding-block: 10px;
   text-align: center;
 }
