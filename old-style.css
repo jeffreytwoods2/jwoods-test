@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("fonts/Roboto/Roboto-Regular.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto-Regular", serif;
+}
+
+main {
+  margin: 20px;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+#page-header {
+  border: solid black 1px;
+  position: relative;
+  height: 200px;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  #page-header {
+    display: grid;
+    place-items: center;
+  }
+  #section-header {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    margin: 0;
+  }
+}
+
+#icon-row {
+  font-size: xx-large;
+  color: lightskyblue;
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  font-size: x-large;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+nav li {
+  flex: 1 1 0;
+}
+
+#projects-link {
+  padding-bottom: 5px;
+  border-style: solid;
+  border-width: 0px 0px 3px 0px;
+  border-color: blue;
+}
+
+nav i {
+  color: blue;
+}
+
+#menu {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+#icons {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  text-align: end;
+  font-size: xx-large;
+}
+
+#logo-li {
+  white-space: nowrap;
+  display: flex;
+}
+
+.logo {
+  border: solid black 1px;
+  padding: 13px 10px 10px 10px;
+  margin: 0;
+  display: inline;
+}
+
+#initials {
+  color: blue;
+}
+
+#truck-pic {
+  width: 600px;
+  border: solid black 1px;
+  border-radius: 40px;
+  padding: 3px;
+}
+
+#project-desc {
+  width: 100%;
+}
+
+.desc-para {
+  width: 66ch;
+  font-size: large;
+  line-height: 1.5;
+  margin: auto;
+}
+
+.project {
+  display: flex;
+  width: 80%;
+  margin-inline: auto;
+  padding-block: 50px;
+  border-style: solid;
+  border-color: lightgray;
+  border-width: 0px 0px 3px 0px;
+}
+
+footer {
+    color: gray;
+    margin: 20px auto;
+    text-align: center;
+}
