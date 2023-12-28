@@ -27,9 +27,9 @@
           ></label>
         </div>
         <div id="menu">
-          <a href="#" id="about-link">About</a>
-          <a href="#" id="projects-link">Projects</a>
-          <a href="#" id="blog-link">Blog</a>
+          <a href="index.html" id="about-link">About</a>
+          <a href="projects.html" id="projects-link">Projects</a>
+          <a href="blog.html" id="blog-link">Blog</a>
         </div>
         <div id="nav-icons">
           <a href="https://github.com/jeffreytwoods2"
@@ -41,96 +41,85 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main id="index-main">
       <!-- Responsive menu modal, hidden by default -->
       <div class="dropdown-content">
-        <a href="#" id="about-link">About</a>
-        <hr />
-        <a href="#" id="projects-link">Projects</a>
-        <hr />
-        <a href="#" id="blog-link">Blog</a>
+        <a href="index.html" id="about-link">About</a>
+        <hr class="menu-hr" />
+        <a href="projects.html" id="projects-link">Projects</a>
+        <hr class="menu-hr" />
+        <a href="blog.html" id="blog-link">Blog</a>
       </div>
-      <section id="page-header">
-        <h2 style="margin: 0; margin-top: 10px">Projects</h2>
-        <p
-          style="
-            font-size: large;
-            text-align: center;
-            padding-inline: 10px;
-            margin: 0;
-            display: grid;
-            place-items: center;
-          "
-        >
-          An assortment of things that I've tinkered with, both on the web and
-          IRL.
-        </p>
-        <span id="icon-row">
-          <i class="fa-solid fa-robot"></i>
-          <i class="fa-solid fa-wrench"></i>
-          <i class="fa-solid fa-computer"></i>
-          <i class="fa-solid fa-gamepad"></i>
-          <i class="fa-solid fa-car"></i>
-        </span>
-      </section>
-      <section class="project">
-        <div>
-          <h3 style="font-size: xx-large; text-align: center">
-            1969 Dodge D100
-          </h3>
-          <p class="desc-para">
-            I seized two engines and lost all my savings trying to rebuild this
-            beauty, but the knowledge and skills I gained throughout the project
-            were priceless. I can't wait to rebuild another truck one day.
+      <img
+        src="img/face.jpeg"
+        width="800"
+        alt="Face shot of Jeffrey Woods"
+        id="face"
+      />
+      <p id="full-name" style="text-align: center">
+        Jeffrey <span style="color: blue">Woods</span>
+      </p>
+      <div id="contact-icons">
+        <a href="https://github.com/jeffreytwoods2"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="mailto:jeffreytwoods2@icloud.com"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/jeffrey-woods/"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      <p id="my-tagline">
+        I'm a student of Computer Science at Utah Valley University, currently
+        working on our school's AI chatbot.
+      </p>
+      <hr class="index-hr" />
+      <section id="roles">
+        <div class="role">
+          <div class="role-title-date">
+            <span class="role-title">Student Developer</span>
+            <span class="role-date">2023 - Present</span>
+          </div>
+          <div class="role-company">
+            <span>Utah Valley University</span>
+            <span>Orem, UT</span>
+          </div>
+          <p>
+            We're building an Azure AI-powered chatbot to provide 24/7 tutoring
+            services and help students stay on top of their coursework.
           </p>
         </div>
-        <img id="truck-pic" src="img/truck1.jpg" alt="Old Dodge pickup" />
-      </section>
-      <hr class="project-hr" />
-      <section class="project">
-        <div>
-          <h3 style="font-size: xx-large; text-align: center">
-            Raspberry Pi Server
-          </h3>
-          <p class="desc-para">
-            After one too many Minecraft Realms hiccups, I decided to host my
-            own server. I bought a Pi 4B with 4GB of RAM, spun up a PaperMC
-            server, and built CPU-melting redstone farms with my friends.
+        <div class="role">
+          <div class="role-title-date">
+            <span class="role-title">Software Intern</span>
+            <span class="role-date">Summer 2022</span>
+          </div>
+          <div class="role-company">
+            <span>Breeze Airways</span>
+            <span>Salt Lake City, UT</span>
+          </div>
+          <p>
+            Airline startup with lots of greenfield apps. Used Angular to write
+            much of the airline's Gate Information Display, which shows flight
+            details for the plane parked at each gate.
           </p>
         </div>
-
-        <img
-          id="mc-pic"
-          src="img/mc.jpeg"
-          width="4032"
-          alt="Raspberry Pi server"
-        />
-      </section>
-      <hr class="project-hr" />
-      <section class="project">
-        <div>
-          <h3 style="font-size: xx-large; text-align: center">
-            Spanish Toy Story
-          </h3>
-          <p class="desc-para">
-            Buzz Lightyear speaks smooth, sultry Spanish in his iconic Flamenco
-            scenes in Toy Story 3. In this video, I compared how three different
-            voice actors handled the same scene. I didn't expect the video to gain 
-            much traction, but the day Disney announced Toy Story 4, my video's views 
-            climbed into the millions. Thanks for the SEO, Disney.
+        <div class="role">
+          <div class="role-title-date">
+            <span class="role-title">Full Stack Intern</span>
+            <span class="role-date">Summer 2021</span>
+          </div>
+          <div class="role-company">
+            <span>Arivo</span>
+            <span>West Valley, UT</span>
+          </div>
+          <p>
+            Earned my backend chops here at the FinTech arm of Ken Garff Auto.
+            Using Go and pure SQL, I worked closely with stakeholders to squash
+            bugs and implement new features as requested.
           </p>
         </div>
-        <iframe
-          width="850"
-          height="315"
-          src="https://www.youtube.com/embed/bDZcycnhni0?si=JTbdmMps7Z6uVDat"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
       </section>
-      <hr class="project-hr" />
+      <hr class="index-hr" />
     </main>
     <footer>
       &copy; Jeffrey Woods. I am not the killer from the creepypasta.

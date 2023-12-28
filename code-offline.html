@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/590500020a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" async></script>
+    <title>Jeffrey Woods - Software Dev</title>
+  </head>
+  <body>
+    <!-- Input is up here for very hacky styling reasons (see CSS rules) -->
+    <input type="checkbox" id="menu-input" class="dropdown" />
+    <header>
+      <nav>
+        <div id="brand">
+          <a href="index.html" class="brand-item" id="initials">JW</a>
+          <p class="brand-item">Software Developer</p>
+          <!-- Hamburger menu icon, hidden on large screens -->
+          <label
+            id="hamburger"
+            for="menu-input"
+            class="fa-solid fa-bars brand-item"
+          ></label>
+        </div>
+        <div id="menu">
+          <a href="#" id="about-link">About</a>
+          <a href="#" id="projects-link">Projects</a>
+          <a href="#" id="blog-link">Blog</a>
+        </div>
+        <div id="nav-icons">
+          <a href="https://github.com/jeffreytwoods2"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.youtube.com/channel/UCbKxFG-YamVLm3OfXnGg9OQ"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </nav>
+    </header>
+    <main id="blog-main">
+      <!-- Responsive menu modal, hidden by default -->
+      <div class="dropdown-content">
+        <a href="index.html" id="about-link">About</a>
+        <hr class="menu-hr" />
+        <a href="projects.html" id="projects-link">Projects</a>
+        <hr class="menu-hr" />
+        <a href="blog.html" id="blog-link">Blog</a>
+      </div>
+      <a href="blog.html"><i class="fa-solid fa-arrow-left"></i></a>
+      <article>
+        <div class="blog-title">
+          <h1>Learning to Code Offline</h1>
+          <p>
+            The web is a dangerous place for coding newbies; try starting out
+            with a book.
+          </p>
+        </div>
+        <hr class="index.hr" />
+        <time datetime="2023-12-28">Dec 28, 2023</time>
+        <div class="blog-content">
+          <p>
+            You've been meaning to escape this job for years. Between the
+            nepotism, office politics, and budget cuts, there's no hope for
+            making it past Assistant to the Regional Manager. You've been eyeing
+            web dev for quite some time, and are ready to take the plunge.
+            You're going to learn to code.
+          </p>
+          <p>
+            The internet told you not to reinvent the wheel; almost every
+            problem on the web has been solved by a framework. Django sounds
+            easy, so you ask Reddit to confirm that you're making the right
+            choice before you begin your journey.
+          </p>
+          <blockquote>
+            <p>"Python doesn't scale!"</p>
+            <p>"MVC frameworks are dead."</p>
+            <p>"Django?? Recruiters will wonder if you can even code!"</p>
+          </blockquote>
+          <p>
+            You remove Django from your computer and wash your hands. Reddit
+            saved you from making the mistake of a lifetime; what a relief! 
+            Back at square one, you browse through your bookmarks and find that meme 
+            you liked about real wizards using PHP. That sounds like a plan, so you 
+            take to Reddit again, this time to discuss some <i>real</i> web technology.
+          </p>
+          <blockquote>
+            <p>"PHP is a fractal of bad design!"</p>
+            <p>"My old boss made me write PHP once; I needed months of therapy after quitting that job."</p>
+            <p>"PHP?? But SvelteKit has a docker image now!"</p>
+          </blockquote>
+
+        </div>
+      </article>
+    </main>
+    <footer>
+      &copy; Jeffrey Woods. I am not the killer from the creepypasta.
+    </footer>
+  </body>
+</html>

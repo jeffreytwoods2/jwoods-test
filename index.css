@@ -16,7 +16,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto-Regular", serif;
-  height: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -28,6 +28,8 @@ header {
 
 main {
   background-color: #F5F5F5;
+  position: relative;
+  flex-grow: 1;
 }
 
 /*
@@ -81,11 +83,6 @@ a {
   background-color: white;
 }
 
-main {
-  position: relative;
-  flex-grow: 1;
-}
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -100,6 +97,10 @@ main {
   z-index: 1;
 }
 
+.dropdown-content > a {
+  display: block;
+}
+
 .dropdown:checked ~ main .dropdown-content {
   display: block;
 }
@@ -109,7 +110,7 @@ main {
   background-color: blue;
 }
 
-hr {
+.menu-hr {
   border: solid 1px blue;
   opacity: 50%;
 }
@@ -181,10 +182,10 @@ nav i {
 } */
 
 .project {
-  padding-inline: 10px;
+  padding-inline: 20px;
 }
 
-img {
+.project-img {
   box-sizing: border-box;
   max-width: 100%;
   border: solid black 1px;
@@ -210,4 +211,153 @@ footer {
   background-color: #F5F5F5;
   padding-block: 10px;
   text-align: center;
+}
+
+/*
+CSS For the index (about) page, which is why it should be exclusively id tags
+*/
+
+#face {
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  box-sizing: border-box;
+  max-width: 150px;
+  border: solid black 1px;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+#full-name {
+  font-size: 2em;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+#index-main {
+  padding-inline: 20px;
+}
+
+#my-tagline {
+  margin-top: 10px;
+  font-size: 1.3em;
+  text-align: justify;
+}
+
+.index-hr {
+  border: solid 1px lightgray; 
+}
+
+#roles {
+  display: grid;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.role-title-date, .role-location {
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  justify-content: space-between;
+  /* margin-block: 0; */
+}
+
+.role-title, .role-date {
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+.role-company {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3px;
+  color: #777777;
+}
+
+#contact-icons {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  font-size: 2.5em;
+  width: 250px;
+  /* color: #0054a8; */
+  color: #3366FF;
+}
+
+/* Custom CSS for the blog page */
+#posts {
+  /* margin-top: 20px; */
+  padding-inline: 20px;
+}
+
+.post {
+  box-sizing: border-box;
+  box-shadow: 3px 3px #555555;
+  max-width: 100%;
+  border: solid black 1px;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: white;
+  margin-top: 25px;
+}
+
+.post > h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.post > p {
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+.post i {
+  display: block;
+  text-align: end;
+  font-size: 1.5em;
+  color: blue;
+}
+
+/* The custom CSS for each blog article */
+#blog-main > a {
+  display: inline-block;
+  margin: 10px 0px 0px 10px;
+  color: blue;
+  font-size: 2.5em;
+}
+
+article {
+  padding-inline: 20px;
+}
+
+.blog-title h1 {
+  font-size: 1.75em;
+  /* text-align: center; */
+  margin-top: 10px;
+}
+
+.blog-title p {
+  display: block;
+  margin-bottom: 0;
+  text-align: justify;
+  color: #555555;
+}
+
+.blog-title + hr {
+  margin-bottom: 0;
+}
+
+time {
+  margin-top: 0;
+  font-size: 0.8em;
+  color: #666666;
+}
+
+.blog-content {
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+blockquote {
+  font-style: italic;
 }

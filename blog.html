@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/590500020a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" async></script>
+    <title>Jeffrey Woods - Software Dev</title>
+  </head>
+  <body>
+    <!-- Input is up here for very hacky styling reasons (see CSS rules) -->
+    <input type="checkbox" id="menu-input" class="dropdown" />
+    <header>
+      <nav>
+        <div id="brand">
+          <a href="index.html" class="brand-item" id="initials">JW</a>
+          <p class="brand-item">Software Developer</p>
+          <!-- Hamburger menu icon, hidden on large screens -->
+          <label
+            id="hamburger"
+            for="menu-input"
+            class="fa-solid fa-bars brand-item"
+          ></label>
+        </div>
+        <div id="menu">
+          <a href="#" id="about-link">About</a>
+          <a href="#" id="projects-link">Projects</a>
+          <a href="#" id="blog-link">Blog</a>
+        </div>
+        <div id="nav-icons">
+          <a href="https://github.com/jeffreytwoods2"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.youtube.com/channel/UCbKxFG-YamVLm3OfXnGg9OQ"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </nav>
+    </header>
+    <main id="blog-main">
+      <!-- Responsive menu modal, hidden by default -->
+      <div class="dropdown-content">
+        <a href="index.html" id="about-link">About</a>
+        <hr class="menu-hr" />
+        <a href="projects.html" id="projects-link">Projects</a>
+        <hr class="menu-hr" />
+        <a href="blog.html" id="blog-link">Blog</a>
+      </div>
+      <section id="page-header">
+        <h2 style="margin: 0; margin-top: 10px">Blog</h2>
+        <p
+          style="
+            font-size: large;
+            text-align: center;
+            padding-inline: 10px;
+            margin: 0;
+            display: grid;
+            place-items: center;
+          "
+        >
+          I love reading forgotten blogs on obscure personal sites, so I made my
+          own.
+        </p>
+        <span id="icon-row">
+          <i class="fa-solid fa-note-sticky"></i>
+          <i class="fa-solid fa-pencil"></i>
+          <i class="fa-solid fa-book"></i>
+          <i class="fa-solid fa-mug-hot"></i>
+          <i class="fa-solid fa-comments"></i>
+        </span>
+      </section>
+      <section id="posts">
+        <a href="code-offline.html">
+          <div class="post">
+            <h3>Learning to Code Offline</h3>
+            <p>
+              The web is a dangerous place for coding newbies; try
+              starting out with a book.
+            </p>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="post">
+            <h3>Why Play With the Old Stuff?</h3>
+            <p>
+              Learning jQuery will show you how we got to React - and where we're headed next.
+            </p>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </a>
+      </section>
+    </main>
+    <footer>
+      &copy; Jeffrey Woods. I am not the killer from the creepypasta.
+    </footer>
+  </body>
+</html>

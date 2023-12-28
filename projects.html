@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/590500020a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" async></script>
+    <title>Jeffrey Woods - Software Dev</title>
+  </head>
+  <body>
+    <!-- Input is up here for very hacky styling reasons (see CSS rules) -->
+    <input type="checkbox" id="menu-input" class="dropdown" />
+    <header>
+      <nav>
+        <div id="brand">
+          <a href="index.html" class="brand-item" id="initials">JW</a>
+          <p class="brand-item">Software Developer</p>
+          <!-- Hamburger menu icon, hidden on large screens -->
+          <label
+            id="hamburger"
+            for="menu-input"
+            class="fa-solid fa-bars brand-item"
+          ></label>
+        </div>
+        <div id="menu">
+          <a href="#" id="about-link">About</a>
+          <a href="#" id="projects-link">Projects</a>
+          <a href="#" id="blog-link">Blog</a>
+        </div>
+        <div id="nav-icons">
+          <a href="https://github.com/jeffreytwoods2"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.youtube.com/channel/UCbKxFG-YamVLm3OfXnGg9OQ"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Responsive menu modal, hidden by default -->
+      <div class="dropdown-content">
+        <a href="index.html" id="about-link">About</a>
+        <hr class="menu-hr" />
+        <a href="projects.html" id="projects-link">Projects</a>
+        <hr class="menu-hr" />
+        <a href="blog.html" id="blog-link">Blog</a>
+      </div>
+      <section id="page-header">
+        <h2 style="margin: 0; margin-top: 10px">Projects</h2>
+        <p
+          style="
+            font-size: large;
+            text-align: center;
+            padding-inline: 10px;
+            margin: 0;
+            display: grid;
+            place-items: center;
+          "
+        >
+          An assortment of things that I've tinkered with, both on the web and
+          IRL.
+        </p>
+        <span id="icon-row">
+          <i class="fa-solid fa-robot"></i>
+          <i class="fa-solid fa-wrench"></i>
+          <i class="fa-solid fa-computer"></i>
+          <i class="fa-solid fa-gamepad"></i>
+          <i class="fa-solid fa-car"></i>
+        </span>
+      </section>
+      <section class="project">
+        <div>
+          <h3 style="font-size: xx-large; text-align: center">
+            1969 Dodge D100
+          </h3>
+          <p class="desc-para">
+            I seized two engines and lost all my savings trying to rebuild this
+            beauty, but the knowledge and skills I gained throughout the project
+            were priceless. I can't wait to rebuild another truck one day.
+          </p>
+        </div>
+        <a href="img/truck1.jpg">
+          <img class="project-img" id="truck-pic" src="img/truck1.jpg" alt="Old Dodge pickup" />
+        </a>
+      </section>
+      <hr class="project-hr" />
+      <section class="project">
+        <div>
+          <h3 style="font-size: xx-large; text-align: center">
+            Raspberry Pi Server
+          </h3>
+          <p class="desc-para">
+            After one too many Minecraft Realms hiccups, I decided to host my
+            own server. I bought a Pi 4B with 4GB of RAM, spun up a PaperMC
+            server, and built CPU-melting redstone farms with my friends.
+          </p>
+        </div>
+        <a href="img/mc.jpeg">
+          <img
+            class="project-img"
+            id="mc-pic"
+            src="img/mc.jpeg"
+            width="4032"
+            alt="Raspberry Pi with external SSD"
+          />
+        </a>
+      </section>
+      <hr class="project-hr" />
+      <section class="project">
+        <div>
+          <h3 style="font-size: xx-large; text-align: center">
+            Spanish Toy Story
+          </h3>
+          <p class="desc-para">
+            Buzz Lightyear speaks smooth, sultry Spanish in his iconic Flamenco
+            scenes in Toy Story 3. In this video, I compared how three different
+            voice actors handled the same scene. I didn't expect the video to
+            gain much traction, but the day Disney announced Toy Story 4, my
+            video's views climbed into the millions. Thanks for the SEO, Disney.
+          </p>
+        </div>
+        <iframe
+          width="850"
+          height="315"
+          src="https://www.youtube.com/embed/bDZcycnhni0?si=JTbdmMps7Z6uVDat"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <hr class="project-hr" />
+    </main>
+    <footer>
+      &copy; Jeffrey Woods. I am not the killer from the creepypasta.
+    </footer>
+  </body>
+</html>
